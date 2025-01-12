@@ -19,5 +19,11 @@ This application leverages MySQL for robust data handling, ensuring a seamless u
 MediGuide promises to be an essential tool in personal health management, equipped with intuitive UI/UX and backed by secure, reliable technology. This Software Requirements Specification (SRS) serves as a blueprint for developing a system that meets the needs of its users with precision and innovation.
 
 
-<br><br><br><br>
+<br><br>
 
+### ER Diagram
+<img src="/er_diagram.png" alt="Four Components of OS" width="600"> <br><br>
+<br>
+
+### Schema Diagram
+<img src="/schema_diagram.png" alt="Four Components of OS" width="600"> <br><br>
