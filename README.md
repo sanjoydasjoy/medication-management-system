@@ -1,29 +1,110 @@
-# medication-management-system
+# Medication Management System (MediGuide)
 
-## Introduction to Project and E-R diagram
+MediGuide is a full-stack medication management platform that helps users:
 
+- manage medicine inventory
+- create medication plans and schedules
+- track taken, missed, and skipped doses
+- monitor adherence and summary reports
+- check known medicine interactions
+- discover nearby doctors
 
+## Tech Stack
 
-❏ MediGuide is a pioneering web application designed to revolutionize healthcare management by providing comprehensive medicine information, medication management tools, health reporting capabilities, and easy access to medical professionals. 
+- Frontend: React + TypeScript + Vite
+- Backend: Node.js + Express + Sequelize
+- Database: MySQL
+- Auth: JWT + bcrypt
 
+## Organized Project Structure
 
-<br><br>
+```text
+medication-management-system/
+	frontend/
+		src/
+			components/
+				common/
+				layout/
+			data/
+			features/
+				auth/
+				dashboard/
+				medicines/
+				schedule/
+				tracking/
+				interactions/
+				doctors/
+				reports/
+				settings/
+			types/
+	backend/
+		src/
+			config/
+			controllers/
+			middleware/
+			models/
+			routes/
+			utils/
+```
 
+## Frontend Pages
 
-This application leverages MySQL for robust data handling, ensuring a seamless user experience for effective health monitoring and informed decision-making. MediGuide integrates a variety of features including detailed medicine queries, comparisons of medication alternatives, personalized medication schedules, and AI-driven health advice. It also includes functionality for generating health reports and discovering doctors with detailed profiles. Aimed at enhancing patient autonomy and streamlining healthcare access, 
+- Login
+- Register
+- Dashboard
+- Medicine Catalog
+- Schedule Management
+- Adherence Tracking
+- Interaction Checker
+- Doctors Directory
+- Reports
+- Settings
 
+## Backend API Modules
 
-<br><br>
+- Auth: register, login, profile
+- Medicines: full CRUD + search
+- Plans: full CRUD for medication schedules
+- Dose Logs: create and list logs
+- Reminders: create and list reminders
+- Interactions: check known interactions
+- Doctors: list and create profiles
+- Reports: summary adherence report
 
+## Setup
 
-MediGuide promises to be an essential tool in personal health management, equipped with intuitive UI/UX and backed by secure, reliable technology. This Software Requirements Specification (SRS) serves as a blueprint for developing a system that meets the needs of its users with precision and innovation.
+### 1. Backend
 
+```bash
+cd backend
+cp .env.example .env
+npm install
+npm run start
+```
 
-<br><br>
+### 2. Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## Environment Variables
+
+Use values from backend/.env.example:
+
+- PORT
+- DB_HOST
+- DB_NAME
+- DB_USER
+- DB_PASSWORD
+- JWT_SECRET
+
+## Diagrams
 
 ### ER Diagram
-<img src="/er_diagram.png" alt="Four Components of OS" width="600"> <br><br>
-<br>
+![ER Diagram](./er_diagram.png)
 
 ### Schema Diagram
-<img src="/schema_diagram.png" alt="Four Components of OS" width="600"> <br><br>
+![Schema Diagram](./schema_diagram.png)
